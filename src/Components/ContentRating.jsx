@@ -25,13 +25,13 @@ class ContentRating extends Component {
     return (
         <div className='content-rating'>
         <p>
-        ---Add text here---
+        Got it. Could you clarify a bit more what you'd like? Are you looking for different kinds of lines, a specific way to generate or display them, or something else entirely? I'd be happy to adjust based on what you need.
         </p>
         <div className='rating-buttons'>
-        <button className="like-button">
+        <button className="like-button" onClick={this.state.handleLike}>
             Like ({this.state.likes})
           </button>
-          <button className="dislike-button">
+          <button className="dislike-button" onClick={this.state.handleDislike}>
             Dislike ({this.state.dislikes})
           </button>
         </div>
